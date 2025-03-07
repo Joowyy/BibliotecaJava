@@ -43,14 +43,27 @@ public class Libro implements Prestado {
 	@Override
 	public boolean prestarLibro() {
 
-		return devuelto = true;
+		if (!devuelto) {
+			
+			devuelto = true;
+			return devuelto;
+		
+		}
+		
+		return false;
 	}
 
 	@Override
 	public boolean devolverLibro() {
 
+		if (devuelto) {
+			
+			devuelto = false;
+			return devuelto;
 		
-		return devuelto = false;
+		}
+		
+		return false;
 	}
 	
 }
