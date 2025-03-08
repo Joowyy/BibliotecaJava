@@ -58,7 +58,7 @@ public class Libro implements Prestado {
 
 		if (devuelto) {
 			
-			devuelto = false;
+			devuelto = true;
 			return devuelto;
 		
 		}
