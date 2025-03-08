@@ -40,6 +40,14 @@ public class Libro implements Prestado {
 	}
 	
 //	METODOS
+	public void mostrarLibro () {
+		
+		System.out.println("ID -> " + idLibro);
+		System.out.println("Nombre -> " + nombre);
+		System.out.println("Devuelto -> " + devuelto + "\n");
+		
+	}
+	
 	@Override
 	public boolean prestarLibro() {
 
@@ -58,7 +66,7 @@ public class Libro implements Prestado {
 
 		if (devuelto) {
 			
-			devuelto = true;
+			devuelto = false;
 			return devuelto;
 		
 		}

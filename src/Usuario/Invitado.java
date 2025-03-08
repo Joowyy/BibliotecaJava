@@ -28,7 +28,7 @@ public class Invitado extends Usuario {
 		
 		System.out.println("\nID -> " + idUsuario);
 		System.out.println("Nombre -> " + nombre);
-		System.out.println("Edad -> " + edad);
+		System.out.println("Edad -> " + edad + "\n");
 		
 	}
 	

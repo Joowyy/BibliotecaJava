@@ -16,6 +16,7 @@ public class Main {
 			switch (opc = sc.nextLine().charAt(0)) {
 			case '1':
 				
+				biblioJowy.añadirPrestamo();
 				break;
 				
 			case '2':
